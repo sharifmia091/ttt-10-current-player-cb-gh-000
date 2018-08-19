@@ -1,4 +1,10 @@
 def turn_count(board)
   counter = 0
-  if 
+  
+  board.each do |character|
+    if character=="X" || character=="0"
+      counter+=1
+    end
+  end
+  return counter
 end
